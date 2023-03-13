@@ -4,6 +4,9 @@ import Ingredients.Ingredient;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
+/**
+ * Класс чизкейк
+ */
 public class Cheesecake extends Bun{
     public Cheesecake(int price, LocalTime dateTime, Ingredient ingredient) {
         super(price, dateTime, ingredient);

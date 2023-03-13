@@ -4,9 +4,8 @@ import Buns.Cheesecake;
 import Buns.Donut;
 import Ingredients.Ingredient;
 import java.time.LocalTime;
-import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
 import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -23,19 +22,18 @@ public class Main {
 
         bun1.addIngredient(new Ingredient("Карица"));
 
+        BunsControl buns = new BunsControl();
+        buns.addBun(bun1);
+        buns.addBun(bun2);
+        buns.addBun(bun3);
+        buns.addBun(bun4);
+        buns.addBun(bun5);
+        buns.addBun(bun6);
+        buns.addBun(bun7);
+        buns.addBun(bun8);
+        buns.addBun(bun9);
+        buns.addBun(bun10);
 
-        ArrayList<Bun> buns = new ArrayList<>();
-        buns.add(bun1);
-        buns.add(bun2);
-        buns.add(bun3);
-        buns.add(bun4);
-        buns.add(bun5);
-        buns.add(bun6);
-        buns.add(bun7);
-        buns.add(bun8);
-        buns.add(bun9);
-        buns.add(bun10);
-;
 
         Scanner s = new Scanner(System.in);
         System.out.println("Введите час: ");
@@ -47,20 +45,7 @@ public class Main {
         LocalTime currentTime = LocalTime.of(hour, minute, 0);
 
 
-        System.out.println("Булки сделанные 5 мин. назад: ");
-        for(Bun bun : buns){
-            long res = ChronoUnit.MINUTES.between(currentTime, bun.getDateTime());
-            if(res == -5 ){
-                System.out.println(bun);
-            }
-        }
-
-
-        System.out.println("\n\nБулки с перцем: ");
-        for(Bun bun : buns){
-            if(bun.findIngredient(new Ingredient("Перец"))){
-                System.out.println(bun);
-            }
-        }
+        System.out.println(buns.getBunsMake5MinutesAgo(currentTime));
+        System.out.println(buns.getBunsWithPepper());
     }
 }

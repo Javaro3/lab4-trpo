@@ -4,6 +4,9 @@ import Ingredients.Ingredient;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
+/**
+ * Класс булочки с корицей
+ */
 public class BunWithPoppySeeds extends Bun{
     public BunWithPoppySeeds(int price, LocalTime dateTime, Ingredient ingredient) {
         super(price, dateTime, ingredient);

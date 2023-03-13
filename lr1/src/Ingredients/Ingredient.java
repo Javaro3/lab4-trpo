@@ -1,5 +1,8 @@
 package Ingredients;
 
+/**
+ * Класс ингредиент
+ */
 public class Ingredient {
     private String name;
 
