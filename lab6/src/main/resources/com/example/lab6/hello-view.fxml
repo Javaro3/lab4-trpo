@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2e3348;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab6.Controller">
+   <children>
+      <Label layoutX="275.0" layoutY="23.0" text="Bun Market" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="49.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="MenuAnchorPane" layoutX="0.0" layoutY="95.0" prefHeight="505.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button fx:id="ShowBunsBtn" layoutX="228.0" layoutY="122.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="341.0" text="Посмотреть список булочек">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddBunBtn" layoutX="229.0" layoutY="177.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="341.0" text="Добавить булочку">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="DeleteBunBtn" layoutX="230.0" layoutY="229.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="341.0" text="Удалить булочку">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="ShowBunsMake5MinAgoBtn" layoutX="231.0" layoutY="283.0" mnemonicParsing="false" text="Булочки сделанные 5 минут назад">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="ShowBunsWithPoppy" layoutX="229.0" layoutY="339.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="341.0" text="Булочки которые содержат перец">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ShowAnchorPane" layoutX="0.0" layoutY="95.0" prefHeight="505.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Label fx:id="ShowLabel" alignment="TOP_LEFT" layoutX="24.0" layoutY="23.0" prefHeight="415.0" prefWidth="752.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="BackToMenuFromShowBtn" layoutX="355.0" layoutY="445.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="Назад">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AddAnchorPane" layoutX="0.0" layoutY="95.0" prefHeight="505.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button fx:id="BackToMenuFromAddBtn" layoutX="352.0" layoutY="456.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" text="Назад">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="TypeComboBox" layoutX="170.0" layoutY="81.0" prefHeight="35.0" prefWidth="458.0" promptText="Тип Булочки" />
+            <TextField fx:id="IngredientInput" alignment="CENTER" layoutX="170.0" layoutY="133.0" prefHeight="44.0" prefWidth="458.0" promptText="Укажите список ингредиентов (через запятую)">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="AddConfirmBtn" layoutX="343.0" layoutY="326.0" mnemonicParsing="false" text="Добавить">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="PriceInput" alignment="CENTER" layoutX="172.0" layoutY="196.0" prefHeight="44.0" prefWidth="458.0" promptText="Введите цену булочки">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TimeInput" alignment="CENTER" layoutX="173.0" layoutY="265.0" prefHeight="44.0" prefWidth="458.0" promptText="Укажите время (формат - чч:мм)">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="DeleteAnchorPane" layoutX="0.0" layoutY="95.0" prefHeight="505.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button fx:id="BackToMenuFromDeleteBtn" layoutX="355.0" layoutY="445.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="Назад">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="DeleteInput" alignment="CENTER" layoutX="201.0" layoutY="92.0" prefHeight="44.0" prefWidth="399.0" promptText="Введите булочку которую надо удалить">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="DeleteBtn" layoutX="201.0" layoutY="158.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="399.0" text="Удалить">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
