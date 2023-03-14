@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #230457;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.binarysearch.Controller">
+   <children>
+      <AnchorPane layoutY="95.0" prefHeight="505.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <TextField fx:id="ArrayInput" alignment="CENTER" layoutX="13.0" layoutY="22.0" prefHeight="25.0" prefWidth="772.0" promptText="Введите список чисел через запятую">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label fx:id="SortArrayLabel" alignment="CENTER" layoutX="13.0" layoutY="71.0" prefHeight="83.0" prefWidth="772.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="FindElemInput" alignment="CENTER" layoutX="14.0" layoutY="172.0" prefHeight="39.0" prefWidth="336.0" promptText="Введите элемент который надо найти">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="FindElemButton" layoutX="373.0" layoutY="172.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="Найти">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="ResultLabel" layoutX="14.0" layoutY="220.0" prefHeight="39.0" prefWidth="459.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="226.0" layoutY="27.0" text="Бинарный поиск" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="46.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
